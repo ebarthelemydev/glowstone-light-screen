@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>Health Checker</title>
+	</head>
+	<body class="light-off">
+		<dialog id="menu">
+			<form method="dialog">
+				<h3>Turn <code id="menu-code-status">ON</code> Light ?</h3>
+				<button type="submit">
+					<h5>Turn <span id="menu-span-status">ON</span> Light</h5>
+				</button>
+			</form>
+		</dialog>
+		<main>
+			<section>
+				<h1>Light Your Screen !</h1>
+				<img
+					id="glowstone"
+					src="assets/glowstone-off.webp"
+					alt="glowstone-off"
+				/>
+				<button id="light">
+					<h2>Switch Light</h2>
+				</button>
+			</section>
+		</main>
+		<script src="app.js"></script>
+	</body>
+</html>

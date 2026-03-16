@@ -1,0 +1,75 @@
+:root {
+	--body-light-on: #ffdead;
+	--body-light-off: #22190d;
+	--text-light-on: #22190d;
+	--text-light-off: navajowhite;
+
+	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+}
+
+img {
+	max-width: 25%;
+}
+
+button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: royalblue;
+	color: inherit;
+	padding: 12px 24px;
+	font-family: inherit;
+	border: 2px solid rgb(48, 67, 124);
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+dialog::backdrop {
+	background-color: var(--body-light-off);
+	opacity: 0.8;
+}
+
+code {
+	border: 2px solid currentColor;
+	border-radius: 4px;
+	padding: 4px 12px;
+}
+
+main {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 48px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.light-on {
+	background-color: var(--body-light-on);
+	color: var(--text-light-on);
+}
+
+.light-off {
+	background-color: var(--body-light-off);
+	color: var(--text-light-off);
+}
