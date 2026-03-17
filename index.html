@@ -4,29 +4,32 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="styles.css" />
-		<title>Health Checker</title>
+		<title>Glowstone Light Network</title>
 	</head>
-	<body class="light-off">
-		<dialog id="menu">
-			<form method="dialog">
-				<h3>Turn <code id="menu-code-status">ON</code> Light ?</h3>
-				<button type="submit">
-					<h5>Turn <span id="menu-span-status">ON</span> Light</h5>
-				</button>
-			</form>
-		</dialog>
+	<body>
+		<header>
+			<h1>Glowstone Light Network</h1>
+			<p id="stats">0 light(s) ON — 0 light(s) OFF</p>
+		</header>
 		<main>
-			<section>
-				<h1>Light Your Screen !</h1>
-				<img
-					id="glowstone"
-					src="assets/glowstone-off.webp"
-					alt="glowstone-off"
-				/>
-				<button id="light">
-					<h2>Switch Light</h2>
-				</button>
-			</section>
+			<aside>
+				<form id="add-form" novalidate>
+					<h2>Add a light</h2>
+					<label for="light-name">Name (min. 3 characters)</label>
+					<input
+						type="text"
+						id="light-name"
+						placeholder="e.g. Living Room"
+					/>
+					<span id="name-error" class="error"></span>
+					<button type="submit">Add Light</button>
+				</form>
+				<div id="global-controls">
+					<button id="all-on">Turn All ON</button>
+					<button id="all-off">Turn All OFF</button>
+				</div>
+			</aside>
+			<section id="lights-grid"></section>
 		</main>
 		<script src="app.js"></script>
 	</body>
