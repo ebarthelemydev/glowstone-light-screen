@@ -9,7 +9,7 @@
 	<body>
 		<header>
 			<h1>Glowstone Light Network</h1>
-			<p id="stats">0 light(s) ON — 0 light(s) OFF</p>
+			<p id="stats"> <span id="number-on">0 </span>light(s) ON — 0 light(s) OFF</p>
 		</header>
 		<main>
 			<aside>
@@ -17,6 +17,7 @@
 					<h2>Add a light</h2>
 					<label for="light-name">Name (min. 3 characters)</label>
 					<input
+						name="namelight"
 						type="text"
 						id="light-name"
 						placeholder="e.g. Living Room"
